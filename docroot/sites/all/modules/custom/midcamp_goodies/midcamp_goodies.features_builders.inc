@@ -1,9 +1,9 @@
 <?php
+
 /**
  * @file
  * Contains MenuLinkFeaturesBuilder.
  */
-
 class MenuLinksFeaturesBuilder extends FeaturesBuilderBase {
 
   public static function listFeatures() {
@@ -21,7 +21,10 @@ class MenuLinksFeaturesBuilder extends FeaturesBuilderBase {
    * {@inheritdoc}
    */
   protected function setComponents() {
-    $this->setNamedComponents('menu_links', array('main-menu:http://2015.midcamp.org'));
+    $this->setNamedComponents('menu_links', array(
+      'main-menu:http://2015.midcamp.org',
+      'user-menu:user/login',
+    ));
   }
 
 }
